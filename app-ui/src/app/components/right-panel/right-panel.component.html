@@ -1,9 +1,18 @@
 <div class="right-panel-container">
   <mat-card>
     <mat-card-title>Right Panel</mat-card-title>
+    <mat-card-subtitle> Cars listed for bidding </mat-card-subtitle>
     <mat-divider inset></mat-divider>
-    <mat-card-subtitle>
-
-    </mat-card-subtitle>
+    <mat-card-content>
+      <cdk-virtual-scroll-viewport
+        appendOnly
+        itemSize="50"
+        class="messages-container"
+      >
+        <div *ngFor="let car of listedCars | async">
+          <app-listed-car-item [car]="car"></app-listed-car-item>
+        </div>
+      </cdk-virtual-scroll-viewport>
+    </mat-card-content>
   </mat-card>
 </div>

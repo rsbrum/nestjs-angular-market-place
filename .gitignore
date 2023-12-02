@@ -1,0 +1,38 @@
+# Node modules for both projects
+app-server/node_modules/
+app-ui/node_modules/
+
+# Dist or build directories
+app-server/dist/
+app-ui/dist/
+
+# Environment files
+app-server/.env
+app-ui/.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Operating System generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories and files
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# Optional: other directories/files specific to your projects
+# app-server/some-directory/
+# app-ui/some-other-directory/

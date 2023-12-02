@@ -2,14 +2,21 @@
   <mat-card>
     <mat-card-title>Console</mat-card-title>
     <mat-divider inset></mat-divider>
-    <mat-card-subtitle>
+
+    <mat-card-content>
       <div class="logs-container">
         <div class="logs-list">
-          <cdk-virtual-scroll-viewport appendOnly itemSize="50" class="messages-container">
-            <div *cdkVirtualFor="let message of messages" class="message-item">{{message}}</div>
+          <cdk-virtual-scroll-viewport
+            appendOnly
+            itemSize="50"
+            class="messages-container"
+          >
+            <div *ngFor="let message of messages | async" class="message-item">
+              <span>LOG: </span>{{ message }}
+            </div>
           </cdk-virtual-scroll-viewport>
         </div>
       </div>
-    </mat-card-subtitle>
+    </mat-card-content>
   </mat-card>
 </div>

@@ -1,9 +1,53 @@
 <div class="left-panel-container">
   <mat-card>
     <mat-card-title>Left Panel</mat-card-title>
-    <mat-divider inset></mat-divider>
     <mat-card-subtitle>
-
+      <p *ngIf="isAuthenticated | async">User Actions</p>
+      <p *ngIf="!(isAuthenticated | async)">
+        Please authenticate yourself to see user actions
+      </p>
     </mat-card-subtitle>
+
+    <mat-divider inset></mat-divider>
+
+    <mat-card-content>
+      <div *ngIf="!(isAuthenticated | async)">
+        <button
+          class="full-width-button"
+          mat-raised-button
+          color="accent"
+          (click)="login()"
+        >
+          Authenticate
+        </button>
+      </div>
+
+      <div class="actions" *ngIf="isAuthenticated | async">
+        <button
+          class="full-width-button"
+          mat-raised-button
+          color="primary"
+          (click)="openNewBidDialog()"
+        >
+          Place Bid
+        </button>
+        <button
+          class="full-width-button"
+          mat-raised-button
+          color="primary"
+          (click)="openNewCarDialog()"
+        >
+          Add Car
+        </button>
+        <button
+          class="full-width-button"
+          mat-raised-button
+          color="warn"
+          (click)="logout()"
+        >
+          Log Out
+        </button>
+      </div>
+    </mat-card-content>
   </mat-card>
 </div>

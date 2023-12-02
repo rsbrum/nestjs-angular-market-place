@@ -1,0 +1,24 @@
+<h1 mat-dialog-title>Create a new car</h1>
+<div mat-dialog-content>
+  <form [formGroup]="carForm">
+    <mat-form-field>
+      <mat-label>Car Name</mat-label>
+      <input formControlName="name" matInput />
+    </mat-form-field>
+    <br />
+    <mat-form-field>
+      <mat-label>Car image URL</mat-label>
+      <input formControlName="imageUrl" matInput />
+    </mat-form-field>
+    <br />
+    <mat-form-field>
+      <mat-label>Starting bid price </mat-label>
+      <input formControlName="startingPrice" matInput type="number" min="0" />
+    </mat-form-field>
+    <br />
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="close()">Close</button>
+  <button mat-button cdkFocusInitial (click)="onSubmit()">Create</button>
+</div>

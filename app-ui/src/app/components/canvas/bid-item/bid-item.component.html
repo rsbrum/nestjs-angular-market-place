@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="item">
+    <img [src]="bid?.car?.imageUrl" alt="" />
+  </div>
+  <div class="item">
+    <p class="bold">{{ bid?.car?.name }}</p>
+    <p><span class="bold">Bid price: </span>${{ bid?.price }}</p>
+  </div>
+
+  <div class="item">
+    <p><span class="bold"> User: </span> {{ bid?.user?.username }}</p>
+    <p>
+      <span class="bold">Created at: </span>
+      {{ bid?.createdAt | date : "short" }}
+    </p>
+  </div>
+</div>

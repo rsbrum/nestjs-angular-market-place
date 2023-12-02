@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="info-container">
+    <img [src]="car?.imageUrl" alt="" />
+    <div>
+      <p class="bold ellipsis-text">{{ car?.name }}</p>
+    </div>
+  </div>
+  <div class="bids-container">
+    <p><span class="bold">Start Price: </span> ${{ car?.startingPrice }}</p>
+    <p><span class="bold"> Bids: </span> {{ car?.bids }}</p>
+  </div>
+
+  <mat-divider></mat-divider>
+</div>

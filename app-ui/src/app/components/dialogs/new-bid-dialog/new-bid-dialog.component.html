@@ -1,0 +1,33 @@
+<h1 mat-dialog-title>Create a new bid for a listed car</h1>
+<div mat-dialog-content>
+  <form [formGroup]="bidForm">
+    <mat-form-field>
+      <mat-label>Select car</mat-label>
+      <mat-select
+        formControlName="car"
+        (selectionChange)="onCarSelect($event.value)"
+        [compareWith]="selectObjectComparison"
+      >
+        >
+        <mat-option *ngFor="let car of cars | async" [value]="car">{{
+          car.name
+        }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br />
+    <mat-form-field *ngIf="selectedCar">
+      <mat-label>Starting bid price </mat-label>
+      <input
+        formControlName="price"
+        matInput
+        type="number"
+        [min]="selectedCar.startingPrice"
+      />
+    </mat-form-field>
+    <br />
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="close()">Close</button>
+  <button mat-button cdkFocusInitial (click)="onSubmit()">Create</button>
+</div>

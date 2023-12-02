@@ -1,9 +1,9 @@
 .console-container {
   width: 100%;
-  height: 30vh;
+  height: 28vh;
   padding: 5px;
   mat-card {
-    height: 26.3vh;
+    height: 25.3vh;
     width: 96.4%;
 
     .logs-container {
@@ -21,6 +21,12 @@
         .message-item {
           height: fit-content;
           padding: 2px;
+          color: rgb(40, 228, 40);
+        }
+
+        .message-item span {
+          font-weight: 600;
+          color: white;
         }
       }
     }

@@ -1,27 +1,62 @@
-# AppUI
+# Setup Instructions
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.4.
+**Installing Dependencies:** Use `npm install` to install necessary packages.
+**Starting the Application:** Execute `ng serve` to launch the application.
 
-## Development server
+# Project Overview
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+**Purpose**
+The application serves as an online marketplace for car biddings. It allows users to:
 
-## Code scaffolding
+- Bid on cars currently listed.
+- Add new cars to the bidding list.
+- View bids in real time.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Authentication
 
-## Build
+- **System:** A basic authentication system, primarily for demonstration.
+- **Session Management:** Utilizes localStorage.
+- **User Authentication:** A hardcoded user is used for the authenticate action.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Shared Resources
 
-## Running unit tests
+- **DTOs:** Located in the shared project directory, these Data Transfer Objects (DTOs) are essential for request/response handling in both the app-ui and app-server.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Main Components
 
-## Running end-to-end tests
+# Left Panel:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+**Functionality:** Displays user actions.
+**Unauthenticated Users:** Presents an option to authenticate.
+**Actions:** Users can place or add bids on cars.
 
-## Further help
+# Canvas:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+**Purpose:** Shows a live feed of ongoing bids.
+**Technology:** Uses a websocket to update bid events in real time.
+
+# Console:
+
+**Functionality:** Logs application actions.
+**Implementation:** Utilizes BehaviourSubject for state management.
+
+# Right Sidebar:
+
+**Display:** Shows cars available for bidding along with details like price, name, image, and bid count.
+**Updates:** Refreshes the list with new bid counts as they occur.
+
+# Services
+
+**Console Service:** Manages state and data flow for the Console Component.
+**Bids Service:** Handles new bids, bid state management, and listens to the websocket for the Canvas Component.
+**Cars Service:** Responsible for car creation, managing the state of listed cars in the Right Sidebar, and updating it with new bids.
+**Auth Service:** Handles basic authentication functions, such as user retrieval, login, and logout.
+
+# Constants
+
+**Messages:** An enum containing texts for messages emitted by the console service.
+**Routes:** An enum detailing API routes used by various services.
+
+# Interfaces
+
+**Purpose:** Defines interfaces for entities used throughout the project.

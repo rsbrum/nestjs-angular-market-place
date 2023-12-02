@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "username": "Fake Jhon",
+    "password": "123"
+  },
+  {
+    "id": 2,
+    "username": "Emannuel Kant",
+    "password": "123"
+  },
+  {
+    "id": 3,
+    "username": "Karl Franz",
+    "password": "123"
+  },
+  {
+    "id": 4,
+    "username": "Friederich Nietzsche",
+    "password": "123"
+  },
+  {
+    "id": 5,
+    "username": "Hayek",
+    "password": "123"
+  }
+]

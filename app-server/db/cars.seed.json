@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Fiat Punto",
+    "startingPrice": 15000,
+    "imageUrl": "https://i.imgur.com/7e3Mz6y.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Ford GT",
+    "startingPrice": 100000,
+    "imageUrl": "https://i.imgur.com/4zHFl2L.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Lamborghini Gallardo",
+    "startingPrice": 150000,
+    "imageUrl": "https://i.imgur.com/znFAFgk.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Lamborghini Murcielago",
+    "startingPrice": 160000,
+    "imageUrl": "https://i.imgur.com/lDn8vVO.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Lotus Elise",
+    "startingPrice": 60000,
+    "imageUrl": "https://i.imgur.com/i3JOrNQ.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Porsche Carrera GT",
+    "startingPrice": 280000,
+    "imageUrl": "https://i.imgur.com/YHa4xJT.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "Toyota Supra",
+    "startingPrice": 40000,
+    "imageUrl": "https://i.imgur.com/znCWjx1.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "Aston Martin DB9",
+    "startingPrice": 90000,
+    "imageUrl": "https://i.imgur.com/ed6anNR.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "Dodge Viper SRT10",
+    "startingPrice": 95000,
+    "imageUrl": "https://i.imgur.com/UuVBsrf.jpeg"
+  },
+  {
+    "id": 10,
+    "name": "Mitsubishi Lancer Evolution VIII",
+    "startingPrice": 45000,
+    "imageUrl": "https://i.imgur.com/ge2xrq8.jpeg"
+  }
+]

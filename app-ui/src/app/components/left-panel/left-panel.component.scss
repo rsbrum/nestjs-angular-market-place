@@ -8,3 +8,9 @@
     height: 96.4vh;
   }
 }
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
