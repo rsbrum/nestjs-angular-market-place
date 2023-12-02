@@ -2,10 +2,10 @@
 
 # Overview
 
-The assignment was fairly broad scoped, so I chose to develop an application that serves as an online marketplace for car biddings that meets the technical requirements of the assignment description
+The assignment was fairly broad scoped, so I chose to develop an application that serves as an online marketplace for car biddings that meets the technical requirements of the assignment description.
 
-- Please navigate to **app-server** for a detailed documentation and installation instructions
-- PLease navigte to **app-ui** for a detailed documentation and installation instructions
+- Please navigate to **app-server** for a detailed documentation and installation instructions.
+- Please navigte to **app-ui** for a detailed documentation and installation instructions.
 
 ## Assignment description
 
